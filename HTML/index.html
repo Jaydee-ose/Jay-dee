@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jay's Web</title>
+  <style>
+    #heading{
+      text-align: center;
+      padding: 20px;
+      background: green;
+      font-size: 28px;
+      color: white;
+    }
+    #navbar ul{
+      display: inline-block;
+      padding: 0px;
+      margin: 15px 0 0 auto;
+      background: white;
+      left: 0;
+    }
+    #navbar ul li{
+      display: inline-block;
+      background: white
+      color: red;
+      padding: 0px;
+      margin: 5px 2px auto 0;
+    }
+    #navbar ul li a{
+      display: inline-block;
+      color: green;
+      font-size: 15px;
+      padding: 7px;
+      text-decoration: none;
+    }
+    #pic img{
+      width: 50%;
+      height: 300px;
+    }
+    #para{
+      text-align: center;
+      font-size: 10px;
+      width: 50%;
+    }
+    #blanc a{
+      font-size: 10px;
+    }
+    #infotab table{
+      border-collapse: collapse;
+      width: 250px;
+    }
+    #infotab table thead{
+      border: 1px solid black;
+    }
+    #infotab table thead th{
+      border: 1px solid black;
+    }  
+    #infotab table tbody td{
+      border: 1px solid black;
+      text-align: center;
+ 
+    }
+  </style>
+</head>
+
+<body>
+  <div id="heading"><b>My First Webpage<b></div>
+ 
+  
+  <div id="navbar">
+    <ul>
+      <li><a href="#webcon">Webpage Contents</a></li>
+      <li><a href="#infotab">Information Table</a></li>
+      <li><a href="#conform">Contact Form</a></li> 
+    </ul>
+  </div>
+  <br>
+  
+  <div id="pic"> 
+    <img src="/FirstAssignment /Images/sunset.jpeg" alt="sunset over the ocean">
+  </div>
+  
+  <div id="blanc"> 
+    <p id="para"> This is a sample paragraph describing the content of the webpage. It explains the purpose of the page and provides some basic information about what users can expect to find</p>
+    <a href="https://www.techyjaunt.com/" target="_blank">Visit Techyjaunt</a>
+  </div>
+  <br><br>
+  
+  <div id="webcon">
+    <div><h2>Webpage Contents</h2></div>
+    <ul> 
+      <li>Introduction</li>
+      <li>Table of Information</li>
+      <li>Contact Form</li>
+    </ul>
+  </div>
+  <br><br><br>
+    
+   
+  <div id="infotab">
+      <div><h2>Information Table</h2></div>
+      <table cell-padding=10px cell-spacing=10px>
+       <thead>
+         <tr>
+           <th>Item</th>
+           <th>Description</th>
+           <th>Quantity</th>
+         </tr>
+       </thead>
+       
+       <tbody>
+         <tr>
+           <td>Pen</td>
+           <td>Blue Ink Pens</td>
+           <td>5</td>
+         </tr>
+         
+         <tr>
+           <td>Notebooks</td>
+           <td>Spiral-bound Notebooks</td>
+           <td>3</td>
+         </tr>
+           
+         <tr>
+           <td>Markers</td>
+           <td>Permanent Markers</td>
+           <td>2</td>
+         </tr>
+         
+       </tbody>
+      </table>
+    
+  </div>   
+  <br><br>
+   
+  <div id="conform">
+      <div><h2>Contact Form</h2></div>
+      <form>
+        <label>Name:</label>
+        <input type="text"/>
+        <br><br>
+    
+        <label>Email:</label>
+        <input type="email"/>
+        <br><br>
+
+       <label>Password:</label>
+        <input type="password"/>
+        <br><br>
+    
+        <label>Gender:</label>
+        <input type="radio" id=female name="gender" value="female"/>
+        <label for="female">Female</label>
+        <input type="radio" id="male "name="gender" value="male"/>
+        <label for="male">Male</label>
+        <br><br> 
+        
+        <label>Subscribe</label>
+        <input type="checkbox"/>
+        <label>Yes, I want to subscribe</label>
+        <br><br>
+        
+        <label>Number of items:</label>
+        <input type="number"/>
+        <br><br> 
+    
+        <label>Date:</label>
+        <input type="date"/>
+        <br><br>
+    
+        <label for="comments">Message:</label><br>
+        <textarea name="comments" id="comments" cols="40" rows="4"></textarea>
+        <br><br>
+        
+        <input type="button" value="Submit"/>
+        <br><br>
+      </form>
+  </div>
+  
+</body>
+
+</html>
